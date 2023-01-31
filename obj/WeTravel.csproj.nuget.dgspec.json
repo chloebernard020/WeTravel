@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Chloé\\Documents\\ENSC\\2A\\S8\\PII\\WeTravel\\WeTravel\\WeTravel.csproj": {}
+    "C:\\Users\\Chloé\\Documents\\ENSC\\2A\\S8\\WeTravel\\WeTravel.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Chloé\\Documents\\ENSC\\2A\\S8\\PII\\WeTravel\\WeTravel\\WeTravel.csproj": {
+    "C:\\Users\\Chloé\\Documents\\ENSC\\2A\\S8\\WeTravel\\WeTravel.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Chloé\\Documents\\ENSC\\2A\\S8\\PII\\WeTravel\\WeTravel\\WeTravel.csproj",
+        "projectUniqueName": "C:\\Users\\Chloé\\Documents\\ENSC\\2A\\S8\\WeTravel\\WeTravel.csproj",
         "projectName": "WeTravel",
-        "projectPath": "C:\\Users\\Chloé\\Documents\\ENSC\\2A\\S8\\PII\\WeTravel\\WeTravel\\WeTravel.csproj",
+        "projectPath": "C:\\Users\\Chloé\\Documents\\ENSC\\2A\\S8\\WeTravel\\WeTravel.csproj",
         "packagesPath": "C:\\Users\\Chloé\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Chloé\\Documents\\ENSC\\2A\\S8\\PII\\WeTravel\\WeTravel\\obj\\",
+        "outputPath": "C:\\Users\\Chloé\\Documents\\ENSC\\2A\\S8\\WeTravel\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Chloé\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,6 +39,18 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.SQlite": {
+              "target": "Package",
+              "version": "[7.0.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
