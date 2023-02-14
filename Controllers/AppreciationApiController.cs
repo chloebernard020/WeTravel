@@ -38,7 +38,16 @@ public class AppreciationApiController : ControllerBase
             return NotFound();
         return appreciationsparlieu;
     }
-
+    [HttpGet("parcompte/{compteId}")]
+    public async Task<ActionResult<IEnumerable<Appreciation>>> GetAppreciationsParCompte(int compteId)
+    {
+        var appreciationsparcompte = await _context.Appreciations.Where(s => s.CompteId == compteId)
+            .Include(s => s.Compte)
+            .ToListAsync();
+        if (appreciationsparcompte == null)
+            return NotFound();
+        return appreciationsparcompte;
+    }
     //Voir comment gérer les appréciations par compte + est ce que les listes sont indispensables ?
 
 

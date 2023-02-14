@@ -11,6 +11,7 @@ public class WeTravelContext : DbContext
     public DbSet<Pays> Pays { get; set; } = null!;
     public DbSet<Ville> Villes { get; set; } = null!;
     public DbSet<Visite> Visites { get; set; } = null!;
+    public DbSet<Photo> Photos { get; set; } = null!;
 
     public string DbPath { get; private set; }
 

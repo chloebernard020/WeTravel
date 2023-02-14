@@ -6,6 +6,5 @@ public class Compte
     public string Mail { get; set; } = null!;
     public string MotDePasse { get; set; } = null!;
     public List<Lieu> Favoris { get; set; } = null!;
-    public List<Lieu> Visites { get; set; } = null!;
-    public List<Appreciation> Appreciations { get; set; } = null!;
+
 }
