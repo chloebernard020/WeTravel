@@ -5,8 +5,6 @@ public class Lieu
     public string Description { get; set; } = null!;
     public Ville Ville { get; set; } = null!;
     public int VilleId { get; set; }
-    public List<Appreciation> Appreciations { get; set; } = null!;
-    public List<Culture>? Cultures { get; set; }
 
     public Lieu() { }
     public Lieu(LieuDTO dto)

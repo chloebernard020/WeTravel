@@ -4,7 +4,7 @@ public class Pays
     public string Nom { get; set; } = null!;
     public Continent Continent { get; set; } = null!;
     public int ContinentId { get; set; }
-    public List<Ville> Villes { get; set; } = null!;
+
 
     public Pays() { }
     public Pays(PaysDTO dto)

@@ -29,7 +29,7 @@ public class AppreciationApiController : ControllerBase
     }
 
     [HttpGet("parlieu/{lieuId}")]
-    public async Task<ActionResult<IEnumerable<Appreciation>>> GetAppreciationsParLieux(int lieuId)
+    public async Task<ActionResult<IEnumerable<Appreciation>>> GetAppreciationsParLieu(int lieuId)
     {
         var appreciationsparlieu = await _context.Appreciations.Where(s => s.LieuId == lieuId)
             .Include(s => s.Lieu)
