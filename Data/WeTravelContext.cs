@@ -5,12 +5,14 @@ public class WeTravelContext : DbContext
 {
     public DbSet<Appreciation> Appreciations { get; set; } = null!;
     public DbSet<Compte> Comptes { get; set; } = null!;
+    public DbSet<Amitie> Amities { get; set; } = null!;
     public DbSet<Continent> Continents { get; set; } = null!;
     public DbSet<Culture> Cultures { get; set; } = null!;
     public DbSet<Lieu> Lieux { get; set; } = null!;
     public DbSet<Pays> Pays { get; set; } = null!;
     public DbSet<Ville> Villes { get; set; } = null!;
     public DbSet<Visite> Visites { get; set; } = null!;
+    public DbSet<Favori> Favoris { get; set; } = null!;
     public DbSet<Photo> Photos { get; set; } = null!;
 
     public string DbPath { get; private set; }

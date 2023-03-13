@@ -4,7 +4,6 @@ public class Ville
     public string Nom { get; set; } = null!;
     public Pays Pays { get; set; } = null!;
     public int PaysId { get; set; }
-    public List<Lieu> Lieux { get; set; } = null!;
 
     public Ville() { }
     public Ville(VilleDTO dto)

@@ -5,6 +5,7 @@ public class Lieu
     public string Description { get; set; } = null!;
     public Ville Ville { get; set; } = null!;
     public int VilleId { get; set; }
+    public string? Photo { get; set; }
 
     public Lieu() { }
     public Lieu(LieuDTO dto)

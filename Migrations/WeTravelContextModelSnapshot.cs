@@ -16,6 +16,27 @@ namespace WeTravel.Migrations
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "7.0.2");
 
+            modelBuilder.Entity("Amitie", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("Compte1Id")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("Compte2Id")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("Compte1Id");
+
+                    b.HasIndex("Compte2Id");
+
+                    b.ToTable("Amities");
+                });
+
             modelBuilder.Entity("Appreciation", b =>
                 {
                     b.Property<int>("Id")
@@ -110,6 +131,27 @@ namespace WeTravel.Migrations
                     b.ToTable("Cultures");
                 });
 
+            modelBuilder.Entity("Favori", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("CompteId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("LieuId")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CompteId");
+
+                    b.HasIndex("LieuId");
+
+                    b.ToTable("Favoris");
+                });
+
             modelBuilder.Entity("Lieu", b =>
                 {
                     b.Property<int>("Id")
@@ -125,6 +167,9 @@ namespace WeTravel.Migrations
 
                     b.Property<string>("Nom")
                         .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Photo")
                         .HasColumnType("TEXT");
 
                     b.Property<int>("VilleId")
@@ -228,6 +273,25 @@ namespace WeTravel.Migrations
                     b.ToTable("Visites");
                 });
 
+            modelBuilder.Entity("Amitie", b =>
+                {
+                    b.HasOne("Compte", "Compte1")
+                        .WithMany()
+                        .HasForeignKey("Compte1Id")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Compte", "Compte2")
+                        .WithMany()
+                        .HasForeignKey("Compte2Id")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Compte1");
+
+                    b.Navigation("Compte2");
+                });
+
             modelBuilder.Entity("Appreciation", b =>
                 {
                     b.HasOne("Compte", "Compte")
@@ -258,6 +322,25 @@ namespace WeTravel.Migrations
                     b.Navigation("Lieu");
                 });
 
+            modelBuilder.Entity("Favori", b =>
+                {
+                    b.HasOne("Compte", "Compte")
+                        .WithMany()
+                        .HasForeignKey("CompteId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Lieu", "Lieu")
+                        .WithMany()
+                        .HasForeignKey("LieuId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Compte");
+
+                    b.Navigation("Lieu");
+                });
+
             modelBuilder.Entity("Lieu", b =>
                 {
                     b.HasOne("Compte", null)
@@ -265,7 +348,7 @@ namespace WeTravel.Migrations
                         .HasForeignKey("CompteId");
 
                     b.HasOne("Ville", "Ville")
-                        .WithMany("Lieux")
+                        .WithMany()
                         .HasForeignKey("VilleId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -336,11 +419,6 @@ namespace WeTravel.Migrations
             modelBuilder.Entity("Compte", b =>
                 {
                     b.Navigation("Favoris");
-                });
-
-            modelBuilder.Entity("Ville", b =>
-                {
-                    b.Navigation("Lieux");
                 });
 #pragma warning restore 612, 618
         }

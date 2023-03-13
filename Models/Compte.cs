@@ -5,5 +5,5 @@ public class Compte
     public string Prenom { get; set; } = null!;
     public string Mail { get; set; } = null!;
     public string MotDePasse { get; set; } = null!;
-    public List<Lieu> Favoris { get; set; } = null!;
+    public List<Lieu>? Favoris { get; set; }
 }

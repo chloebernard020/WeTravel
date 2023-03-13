@@ -1,0 +1,5 @@
+{
+  "appService.preDeployTask": "publish-release",
+  "appService.deploySubpath": "bin\\Release\\net6.0\\publish",
+  "appService.defaultWebAppToDeploy": "/subscriptions/92b59a23-146c-47be-a1f5-7d0577d1982d/resourceGroups/appsvc_windows_centralus/providers/Microsoft.Web/sites/EnscWeTravel"
+}
