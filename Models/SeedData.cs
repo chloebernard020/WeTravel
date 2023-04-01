@@ -321,7 +321,7 @@ public class SeedData
 
                 Ville Hoian = new Ville
                 {
-                    Nom = "Hoi An",
+                    Nom = "Hội An",
                     Pays = Vietnam
                 };
 
@@ -506,6 +506,14 @@ public class SeedData
                     Photo = "data:image/jpeg;base64,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"
                 };
 
+                Lieu Vinicunca = new Lieu
+                {
+                    Nom = "Vinicunca",
+                    Description = "Vinicunca, surnommée la « montagne aux sept couleurs » ou « montagne arc-en-ciel », est une montagne du Pérou. Elle culmine à 5 200 m d'altitude. Elle est située dans la région de Cuzco, au cœur des Andes.",
+                    Ville = Cuzco,
+                    Photo = "https://image.cnbcfm.com/api/v1/image/106203306-1571991790927gettyimages-1095321688cropped.jpg?v=1571991897"
+                };
+
                 Lieu MuseeSantuarios = new Lieu
                 {
                     Nom = "Musée des sanctuaires andins",
@@ -531,8 +539,164 @@ public class SeedData
                 };
 
 
+                Lieu Palaisroyal = new Lieu
+                {
+                    Nom = "Le Palais Royal",
+                    Description = "Le palais royal de Stockholm (Stockholms slott en suédois) est un palais royal situé sur le Norrström, dans la partie nord de Gamla stan (la vieille ville) de Stockholm, en Suède. Il s'agit de la résidence officielle des monarques de Suède.",
+                    Ville = Stockholm,
+                    Photo = "https://voyagerenphotos.com/wp-content/uploads/2016/09/chateau-drottningholm.jpg"
+                };
 
+                Lieu PontMalmo = new Lieu
+                {
+                    Nom = "Pont de l'Øresund",
+                    Description = "Le pont de l'Øresund, avec son prolongement par une île puis un tunnel, relie les villes de Malmö en Suède et de Copenhague au Danemark. Ce pont est à deux niveaux : sur la partie supérieure se trouve l'autoroute E20, et sur la partie inférieure la ligne ferroviaire Copenhague-Malmö.",
+                    Ville = Malmo,
+                    Photo = "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/%C3%98resund_Bridge_from_the_air_in_September_2015.jpg/220px-%C3%98resund_Bridge_from_the_air_in_September_2015.jpg"
+                };
 
+                Lieu Liseberg = new Lieu
+                {
+                    Nom = "Liseberg",
+                    Description = "Liseberg est un site très animé où l'on trouve non seulement un parc d'attractions, mais aussi des jardins, un parc de sculptures, ...",
+                    Ville = Goteborg,
+                    Photo = "https://www.liseberg.com/bed47fb1/contentassets/d95dac740c2a4287ab09530099811110/-liseberg-entre.jpeg"
+                };
+                Lieu Tourbelem = new Lieu
+                {
+                    Nom = "La Tour de Belem",
+                    Description = "La tour de Belém a été construite sur les bords du Tage, dans la freguesia de Santa Maria de Belém, entre 1514 et 1519 par le roi Manuel Ier de Portugal pour garder l'entrée du port de Lisbonne.",
+                    Ville = Lisbonne,
+                    Photo = "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Torre_Belem_%28Lisboa%29.jpg/420px-Torre_Belem_%28Lisboa%29.jpg"
+                };
+
+                Lieu Tourclercs = new Lieu
+                {
+                    Nom = "La Tour des Clercs",
+                    Description = "Visible de nombreux points de la ville de Porto, dont elle est le symbole architectural, la tour des Clercs, sur la place de la Liberté, est le clocher de l’église du même nom.",
+                    Ville = Porto,
+                    Photo = "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Torre_de_los_Cl%C3%A9rigos%2C_Oporto%2C_Portugal%2C_2012-05-09%2C_DD_01.JPG/390px-Torre_de_los_Cl%C3%A9rigos%2C_Oporto%2C_Portugal%2C_2012-05-09%2C_DD_01.JPG"
+                };
+
+                Lieu CathedraleVelha = new Lieu
+                {
+                    Nom = "La cathédrale Velha de Coimbra",
+                    Description = "La Cathédrale Velha de Coimbra est un édifice religieux catholique de style roman, de la ville de Coimbra, au Portugal. Construite comme 'cathédrale' au xiie siècle et jouant un rôle historique important durant plusieurs siècles, l'église perdit ce statut lorsque le siège épiscopal fut transféré dans l'ancienne église des Jésuites, à la fin du xviiie siècle.",
+                    Ville = Coimbra,
+                    Photo = "https://media-cdn.sygictraveldata.com/media/800x600/612664395a40232133447d33247d383635343633"
+                };
+
+                Lieu gyeongbokgung = new Lieu
+                {
+                    Nom = "Gyeongbokgung",
+                    Description = "Gyeongbokgung (경복궁, 景福宮), aussi appelé palais de Gyeongbok, est un palais royal situé au nord de Séoul en Corée du Sud. D’abord construit en 1394 puis reconstruit en 1867, c'est le palais principal des cinq grands palais construits sous la dynastie Joseon. ",
+                    Ville = Seoul,
+                    Photo = "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Gyeongbokgung-GeunJeongJeon.jpg/390px-Gyeongbokgung-GeunJeongJeon.jpg"
+                };
+
+                Lieu Beomeosa = new Lieu
+                {
+                    Nom = "Le temple de Beomeosa",
+                    Description = "Construit en 678 par le moine Uisang, le temple Beomeosa est un incontournable lors de votre séjour à Busan. Édifice de contemplation majestueuse, il est l’un des trois temples les plus populaires de la région de Yeongnam au côté du temple Haeinsa et du temple Tongdosa. Comme la plupart du patrimoine coréen, Beomeosa n’échappe pas aux destructions durant les guerres. Le temple fût détruit majoritairement lors de la guerre Imjin (1592-1598) opposant les Coréens de la dynastie Joseon à l’empire chinois du Japon.",
+                    Ville = Busan,
+                    Photo = "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/11/77/7a/6a/the-temple-complex.jpg?w=1200&h=-1&s=1"
+                };
+
+                Lieu Hallasan = new Lieu
+                {
+                    Nom = "Hallasan",
+                    Description = "Le mont Halla (en coréen : 한라산, Hallasan) est le point culminant de la Corée du Sud, à 1 950 mètres d'altitude. Il domine l'île volcanique de Jeju, où il est situé, à 100 kilomètres au sud des côtes de la Corée continentale",
+                    Ville = Tokyo,
+                    Photo = "https://tongglobalcdn.visitkorea.or.kr/cms/resource/38/1883538_image2_1.jpg"
+                };
+
+                Lieu asakusa = new Lieu
+                {
+                    Nom = "Le sanctuaire Asakusa",
+                    Description = "Asakusa (浅草?) est un quartier populaire de Tokyo de l'arrondissement Taitō, proche d'Ueno, le long de la rivière Sumida, accessible par la rue Kappabashi.",
+                    Ville = Jeju,
+                    Photo = "data:image/jpeg;base64,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"
+                };
+
+                Lieu kinkakuji = new Lieu
+                {
+                    Nom = "Le temple Kinkaku-Ji",
+                    Description = "Le Kinkaku-ji (金閣寺?, litt. « temple du Pavillon d'or ») est le nom usuel du Rokuon-ji (鹿苑寺?, litt. « temple impérial du jardin des cerfs ») situé à Kyōto au Japon.",
+                    Ville = Kyoto,
+                    Photo = "https://japon-voyage.fr/wp-content/uploads/2022/08/temple-kinkaku-ji.jpg"
+                };
+
+                Lieu chateauosaka = new Lieu
+                {
+                    Nom = "Le chateau d'Osaka",
+                    Description = "Le château d'Osaka (大坂城 / 大阪城, Ōsaka-jō?) est un des châteaux les plus célèbres du Japon. Il a joué un rôle majeur durant l'unification du Japon au xvie siècle au cours de l'une des dernières grandes révoltes contre les Tokugawa, réprimée lors des sièges d'Osaka en 1614 et 1615.",
+                    Ville = Osaka,
+                    Photo = "https://www.japantravel-centre.com/wp-content/uploads/2016/03/osaka-osakajo_l.jpg"
+                };
+
+                Lieu LacHanoi = new Lieu
+                {
+                    Nom = "Le Lac Hoan Kiem",
+                    Description = "Le lac Hoan Kiem ou lac de l'Épée restituée est un lac situé à Hanoï la capitale du Viêt Nam. Le lac a donné son nom au district de Hoan Kiem qui l'environne.",
+                    Ville = Hanoi,
+                    Photo = "http://t2.gstatic.com/licensed-image?q=tbn:ANd9GcSo6_KQYi27Jxr8k1QzFJQI7RTL0lcpk9QTc-Fd1SnGPy-zLwVgaG7eMA2iK71YCszY"
+                };
+
+                Lieu pontcouvert = new Lieu
+                {
+                    Nom = "Le Pont couvert Japonais",
+                    Description = "Le pont couvert japonais à Hoi An est un bel exemple de l’architecture japonaise de l’époque. Reliant la rue Tran Phu à la rue Nguyen Thi Minh Khai, le pont couvert japonais a été construit dans les années 1590 par la communauté japonaise de Hoi An, afin de créer un lien avec les quartiers chinois de l’autre côté du fleuve.",
+                    Ville = Hoian,
+                    Photo = "https://horizon-vietnamvoyage.com/wp-content/uploads/2018/04/le-pont-japonais-hoi-an-vietnam.jpg"
+                };
+
+                Lieu museevestiges = new Lieu
+                {
+                    Nom = "Le Musée des vestiges de la Guerre",
+                    Description = "Un lieu qui accueille un nombre important des visiteurs qui l’apprécient particulièrement est le musée des vestiges de la guerre à Ho Chi Minh – ville. Ce musée très différent des autres est à voir absolument pour comprendre l’histoire du Vietnam et aussi pour se souvenir que la guerre n’a rien de glorieux.",
+                    Ville = HoChiMin,
+                    Photo = "https://authentikvietnam.com/media/blog/musee-de-la-guerre-ho-chi-minh-ville-blog-voyage.jpg"
+                };
+
+                Lieu operasydney = new Lieu
+                {
+                    Nom = "L'opéra de Sydney",
+                    Description = "L’opéra de Sydney, à Sydney est l'un des plus célèbres bâtiments du xxe siècle et un haut-lieu de représentation des arts notamment lyriques. Son architecture originale, qui ressemble à un voilier pour les uns, ou à un coquillage pour les autres, a été imaginée par le Danois Jørn Utzon.",
+                    Ville = Sydney,
+                    Photo = "https://cdn.britannica.com/96/100196-050-C92064E0/Sydney-Opera-House-Port-Jackson.jpg"
+                };
+
+                Lieu MuseeartMelbourne = new Lieu
+                {
+                    Nom = "Le musée national du Victoria",
+                    Description = "Le musée national du Victoria – en anglais National Gallery of Victoria, abrégé en NGV – est un musée d'art situé à Melbourne, en Australie. Créé en 1861, c'est le plus ancien et le plus grand musée du pays. La principale partie est située à St Kilda Road, au cœur de la Cité des Arts de Southbank, avec une annexe à Federation Square.",
+                    Ville = Melbourne,
+                    Photo = "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/National_Gallery_of_Victoria_-_NGV_-_Joy_of_Museums.jpg/1024px-National_Gallery_of_Victoria_-_NGV_-_Joy_of_Museums.jpg"
+                };
+
+                Lieu KingsPark = new Lieu
+                {
+                    Nom = "Kings Park",
+                    Description = "Kings Park est un parc public d'Australie-Occidentale, situé au centre de Perth, à l'ouest du district financier de la ville. Fondé en 1895, il comporte des pelouses, des jardins botaniques et un peu de bush sur le mont Eliza (en). Sa superficie est de 4 km2.",
+                    Ville = Perth,
+                    Photo = "https://rgcopcorpweb920-cdn-endpoint.azureedge.net/-/media/Project/COP/COP/COP/Assets/Images-and-Video/Social-media-and-blog/Blogs/Kings-Park-king-of-parks/Kings-Park-at-night.jpg?h=503&w=760&rev=ecfc9cd0dc5a49ae83b9a7242aaa4456&modified=20190710041150&useCustomFunctions=1&centerCrop=1&hash=F7BCE6F7074D4CEBD1AB42B67A6B8775"
+                };
+
+                Lieu statueliberte = new Lieu
+                {
+                    Nom = "La Statue de la Liberté",
+                    Description = "La statue de la Liberté ou La Liberté éclairant le monde1,2 (en anglais : Liberty Enlightening the World)3, ou simplement Liberté, plus connue sous le nom Statue of Liberty, est l'un des monuments les plus célèbres des États-Unis. Cette statue monumentale est située à New York, sur la Liberty Island, au sud de Manhattan, à l'embouchure de l'Hudson et à proximité d’Ellis Island.",
+                    Ville = NewYork,
+                    Photo = "https://img-4.linternaute.com/PYTFuLj9qjwMwZffX4dGkFi24cA=/fit-in/x630/smart/filters:fill(1D1D1B)/8f11cc301c0447eda3e7573fc3a58e36/ccmcms-linternaute/35200045.jpg"
+                };
+
+                Lieu CnTower = new Lieu
+                {
+                    Nom = "CN Tower",
+                    Description = "La tour CN (en anglais : CN Tower) est une tour de 553,33 m située dans le centre de Toronto, au Canada, qui est devenue l'emblème de cette ville.",
+                    Ville = Toronto,
+                    Photo = "https://lepetitjournal.com/sites/default/files/7869105720_dfb04ae197_b.jpg"
+                };
 
                 context.Lieux.AddRange(
                 Laboverie,
@@ -549,50 +713,142 @@ public class SeedData
                 PlaceBourse,
                 SagradaFamilia,
                 MuseePrado,
+                Vinicunca,
                 MuseeSantuarios,
                 Sotomayor,
-                Cavancha
+                Cavancha,
+                Palaisroyal,
+                PontMalmo,
+                Liseberg,
+                Tourbelem,
+                Tourclercs,
+                CathedraleVelha,
+                gyeongbokgung,
+                Beomeosa,
+                Hallasan,
+                asakusa,
+                kinkakuji,
+                chateauosaka,
+                LacHanoi,
+                pontcouvert,
+                museevestiges,
+                operasydney,
+                MuseeartMelbourne,
+                KingsPark,
+                statueliberte,
+                CnTower
                 );
-
-                Compte test = new Compte
+                Culture culture1toureiffel = new Culture
                 {
-                    Nom = "Test",
-                    Prenom = "Test2",
-                    Mail = "test@ensc.fr",
+                    Nom = "Un autre nom ?",
+                    Description = "La Tour Eiffel aurait pu porter un autre nom ! En effet, Gustave Eiffel étant allemand, son nom de naissance est Gustave Bonickhausen.",
+                    Lieu = TourEiffel
+
+                };
+
+                Culture culture2toureiffel = new Culture
+                {
+                    Nom = "Gustave Eiffel ne l'a pas imaginée",
+                    Description = "Gustave Eiffel n'est pas l'inventeur de la tour. C'est l'architecte Stephen Sauvestre qui a eu l'idée de a forme telle que nous la connaissons aujourd'hui.",
+                    Lieu = TourEiffel
+                };
+
+                Culture culture1boverie = new Culture
+                {
+                    Nom = "L'exposition universelle de 1905",
+                    Description = "Le batiment fut construit initialement pour l'Exposition Universelle de 1905 rassemblant 37 pays et comptabilisant 7 millions d'entrées",
+                    Lieu = Laboverie
+                };
+
+                Culture culture2boverie = new Culture
+                {
+                    Nom = "Son architecture",
+                    Description = "De style éclectique, influencé par l’architecture néoclassique française de la fin du XVIIIe siècle et souvent comparé au Musée royal de l’Afrique centrale à Bruxelles (architecte Charles Girault, 1905-1908), le Palais est reconnaissable aux cinq dômes hémisphériques en ardoises de la toiture et à la pierre blanche de Gobertange qui unit ses façades principales et les multiples parties décoratives sculptées (Vanwarenberg).",
+                    Lieu = Laboverie
+                };
+
+                context.Cultures.AddRange(culture1toureiffel, culture2toureiffel, culture1boverie, culture2boverie);
+
+                Compte chloe = new Compte
+                {
+                    Nom = "Bernard",
+                    Prenom = "Chloé",
+                    Mail = "cbernard020@ensc.fr",
                     MotDePasse = "12345",
                 };
-                context.Comptes.AddRange(test);
 
-                Appreciation aptoureiffel = new Appreciation
+                Compte anais = new Compte
+                {
+                    Nom = "Degorre",
+                    Prenom = "Anaïs",
+                    Mail = "adegorre@ensc.fr",
+                    MotDePasse = "54321",
+                };
+                context.Comptes.AddRange(chloe, anais);
+
+                Appreciation aptoureiffel1 = new Appreciation
                 {
                     Commentaire = "J'ai adoré ce monument emblématique de Paris ! J'ai déjà hate d'y retourner",
                     Date = new DateTime(2022, 12, 20, 19, 0, 0),
-                    Compte = test,
+                    Compte = chloe,
                     Lieu = TourEiffel,
                 };
-                context.Appreciations.AddRange(aptoureiffel);
+
+                Appreciation aptoureiffel2 = new Appreciation
+                {
+                    Commentaire = "Super visite !",
+                    Date = new DateTime(2022, 12, 20, 19, 0, 0),
+                    Compte = anais,
+                    Lieu = TourEiffel,
+                };
+
+                Appreciation apboverie = new Appreciation
+                {
+                    Commentaire = "C'était un lieu calme et reposant, les jardins sont fleuris et magnifiques et le musée est très intéressant.",
+                    Date = new DateTime(2022, 11, 20, 10, 0, 0),
+                    Compte = chloe,
+                    Lieu = Laboverie,
+                };
+                context.Appreciations.AddRange(aptoureiffel1, aptoureiffel2, apboverie);
 
                 Visite vistoureiffel = new Visite
                 {
-                    Date = new DateTime(2022, 12, 19, 19, 0, 0),
-                    Compte = test,
+                    Date = new DateTime(2022, 12, 19, 14, 0, 0),
+                    Compte = chloe,
                     Lieu = TourEiffel,
                 };
 
                 Visite visboverie = new Visite
                 {
-                    Date = new DateTime(2022, 11, 19, 19, 0, 0),
-                    Compte = test,
-                    Lieu = TourEiffel,
-                };
-
-                Favori favboverie = new Favori
-                {
-                    Compte = test,
-                    Lieu = TourEiffel,
+                    Date = new DateTime(2022, 11, 19, 15, 0, 0),
+                    Compte = chloe,
+                    Lieu = Laboverie,
                 };
 
                 context.Visites.AddRange(vistoureiffel, visboverie);
+
+                Favori favboverie = new Favori
+                {
+                    Compte = chloe,
+                    Lieu = Laboverie,
+                };
+
+                Favori favpalaisroyal = new Favori
+                {
+                    Compte = chloe,
+                    Lieu = Palaisroyal,
+                };
+                context.Favoris.AddRange(favboverie, favpalaisroyal);
+                Amitie amitie1 = new Amitie
+                {
+                    Compte1 = chloe,
+                    Compte2 = anais,
+
+                };
+                context.Amities.AddRange(amitie1);
+
+
+
             }
             context.SaveChanges();
         }
