@@ -6,6 +6,7 @@ public class WeTravelContext : DbContext
     public DbSet<Appreciation> Appreciations { get; set; } = null!;
     public DbSet<Compte> Comptes { get; set; } = null!;
     public DbSet<Amitie> Amities { get; set; } = null!;
+    public DbSet<Demande> Demandes { get; set; } = null!;
     public DbSet<Continent> Continents { get; set; } = null!;
     public DbSet<Culture> Cultures { get; set; } = null!;
     public DbSet<Lieu> Lieux { get; set; } = null!;
@@ -14,6 +15,9 @@ public class WeTravelContext : DbContext
     public DbSet<Visite> Visites { get; set; } = null!;
     public DbSet<Favori> Favoris { get; set; } = null!;
     public DbSet<Photo> Photos { get; set; } = null!;
+
+    public DbSet<Conversation> Conversations { get; set; } = null!;
+    public DbSet<Message> Messages { get; set; } = null!;
 
     public string DbPath { get; private set; }
 

@@ -1535,11 +1535,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Chloé\\Documents\\ENSC\\2A\\S8\\Développement Mobile\\WeTravel\\WeTravel.csproj",
+      "projectUniqueName": "C:\\Users\\Chloé\\Documents\\ENSC\\2A\\S8\\Projet Informatique Individuel\\WeTravel\\WeTravel.csproj",
       "projectName": "WeTravel",
-      "projectPath": "C:\\Users\\Chloé\\Documents\\ENSC\\2A\\S8\\Développement Mobile\\WeTravel\\WeTravel.csproj",
+      "projectPath": "C:\\Users\\Chloé\\Documents\\ENSC\\2A\\S8\\Projet Informatique Individuel\\WeTravel\\WeTravel.csproj",
       "packagesPath": "C:\\Users\\Chloé\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Chloé\\Documents\\ENSC\\2A\\S8\\Développement Mobile\\WeTravel\\obj\\",
+      "outputPath": "C:\\Users\\Chloé\\Documents\\ENSC\\2A\\S8\\Projet Informatique Individuel\\WeTravel\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Chloé\\AppData\\Roaming\\NuGet\\NuGet.Config",

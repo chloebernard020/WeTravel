@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -9,9 +10,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace WeTravel.Migrations
 {
     [DbContext(typeof(WeTravelContext))]
-    partial class WeTravelContextModelSnapshot : ModelSnapshot
+    [Migration("20230413074054_AddDemandes")]
+    partial class AddDemandes
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "7.0.2");
@@ -105,27 +108,6 @@ namespace WeTravel.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Continents");
-                });
-
-            modelBuilder.Entity("Conversation", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER");
-
-                    b.Property<int>("Compte1Id")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<int>("Compte2Id")
-                        .HasColumnType("INTEGER");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("Compte1Id");
-
-                    b.HasIndex("Compte2Id");
-
-                    b.ToTable("Conversations");
                 });
 
             modelBuilder.Entity("Culture", b =>
@@ -224,39 +206,6 @@ namespace WeTravel.Migrations
                     b.HasIndex("VilleId");
 
                     b.ToTable("Lieux");
-                });
-
-            modelBuilder.Entity("Message", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER");
-
-                    b.Property<int>("CompteEnvoyeurId")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<int>("CompteReceveurId")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<int>("ConversationId")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<DateTime>("Date")
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("Mess")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("CompteEnvoyeurId");
-
-                    b.HasIndex("CompteReceveurId");
-
-                    b.HasIndex("ConversationId");
-
-                    b.ToTable("Messages");
                 });
 
             modelBuilder.Entity("Pays", b =>
@@ -386,25 +335,6 @@ namespace WeTravel.Migrations
                     b.Navigation("Lieu");
                 });
 
-            modelBuilder.Entity("Conversation", b =>
-                {
-                    b.HasOne("Compte", "Compte1")
-                        .WithMany()
-                        .HasForeignKey("Compte1Id")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Compte", "Compte2")
-                        .WithMany()
-                        .HasForeignKey("Compte2Id")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Compte1");
-
-                    b.Navigation("Compte2");
-                });
-
             modelBuilder.Entity("Culture", b =>
                 {
                     b.HasOne("Lieu", "Lieu")
@@ -467,33 +397,6 @@ namespace WeTravel.Migrations
                         .IsRequired();
 
                     b.Navigation("Ville");
-                });
-
-            modelBuilder.Entity("Message", b =>
-                {
-                    b.HasOne("Compte", "CompteEnvoyeur")
-                        .WithMany()
-                        .HasForeignKey("CompteEnvoyeurId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Compte", "CompteReceveur")
-                        .WithMany()
-                        .HasForeignKey("CompteReceveurId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Conversation", "Conversation")
-                        .WithMany()
-                        .HasForeignKey("ConversationId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("CompteEnvoyeur");
-
-                    b.Navigation("CompteReceveur");
-
-                    b.Navigation("Conversation");
                 });
 
             modelBuilder.Entity("Pays", b =>

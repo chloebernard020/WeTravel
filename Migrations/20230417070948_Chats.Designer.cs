@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -9,9 +10,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace WeTravel.Migrations
 {
     [DbContext(typeof(WeTravelContext))]
-    partial class WeTravelContextModelSnapshot : ModelSnapshot
+    [Migration("20230417070948_Chats")]
+    partial class Chats
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "7.0.2");
@@ -238,12 +241,6 @@ namespace WeTravel.Migrations
                     b.Property<int>("CompteReceveurId")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("ConversationId")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<DateTime>("Date")
-                        .HasColumnType("TEXT");
-
                     b.Property<string>("Mess")
                         .IsRequired()
                         .HasColumnType("TEXT");
@@ -253,8 +250,6 @@ namespace WeTravel.Migrations
                     b.HasIndex("CompteEnvoyeurId");
 
                     b.HasIndex("CompteReceveurId");
-
-                    b.HasIndex("ConversationId");
 
                     b.ToTable("Messages");
                 });
@@ -483,17 +478,9 @@ namespace WeTravel.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Conversation", "Conversation")
-                        .WithMany()
-                        .HasForeignKey("ConversationId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.Navigation("CompteEnvoyeur");
 
                     b.Navigation("CompteReceveur");
-
-                    b.Navigation("Conversation");
                 });
 
             modelBuilder.Entity("Pays", b =>

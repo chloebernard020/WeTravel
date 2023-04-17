@@ -784,7 +784,14 @@ public class SeedData
                     Mail = "adegorre@ensc.fr",
                     MotDePasse = "54321",
                 };
-                context.Comptes.AddRange(chloe, anais);
+                Compte elea = new Compte
+                {
+                    Nom = "Roche",
+                    Prenom = "Elea",
+                    Mail = "elroche@ensc.fr",
+                    MotDePasse = "123456",
+                };
+                context.Comptes.AddRange(chloe, anais, elea);
 
                 Appreciation aptoureiffel1 = new Appreciation
                 {
@@ -845,9 +852,15 @@ public class SeedData
                     Compte2 = anais,
 
                 };
+
                 context.Amities.AddRange(amitie1);
+                Demande demande1 = new Demande
+                {
+                    CompteDemandeur = chloe,
+                    CompteReceveur = anais,
 
-
+                };
+                context.Demandes.AddRange(demande1);
 
             }
             context.SaveChanges();

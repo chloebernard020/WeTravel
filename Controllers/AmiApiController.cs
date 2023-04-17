@@ -31,12 +31,20 @@ public class AmitieApiController : ControllerBase
     [HttpGet("parcompte/{compteId}")]
     public async Task<ActionResult<IEnumerable<Amitie>>> GetAmitiesParCompte(int compteId)
     {
-        var amitiesparcompte = await _context.Amities.Where(s => s.Compte1Id == compteId)
+        var amities1 = await _context.Amities.Where(s => s.Compte1Id == compteId)
             .Include(s => s.Compte1Id)
             .ToListAsync();
-        if (amitiesparcompte == null)
+
+        var amities2 = await _context.Amities.Where(s => s.Compte2Id == compteId)
+            .Include(s => s.Compte2Id)
+            .ToListAsync();
+
+        var amitiesparcompte = amities1.Union(amities2);
+
+        if (!amitiesparcompte.Any())
             return NotFound();
-        return amitiesparcompte;
+
+        return amitiesparcompte.ToList();
     }
 
     [HttpPost]
