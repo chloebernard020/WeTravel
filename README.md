@@ -1,2 +1,2 @@
 # WeTravel
-Projet informatique individuel
+Création de l'API Projet informatique individuel
